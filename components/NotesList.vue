@@ -40,7 +40,7 @@
 </template>
 
 <script>
-import { updateActiveNote } from '../vuex/actions'
+import { setActiveNote } from '../vuex/actions'
 
 export default {
   data () {
@@ -54,7 +54,7 @@ export default {
       activeNote: state => state.activeNote
     },
     actions: {
-      updateActiveNote
+      setActiveNote
     }
   },
   computed: {
